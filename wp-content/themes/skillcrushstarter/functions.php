@@ -35,32 +35,47 @@ if (function_exists('register_sidebar')) {
 
 /** Creating menus **/
 // Check if the menu exists
-$primary_menu = wp_get_nav_menu_object('Primary Menu');
+// $primary_menu = wp_get_nav_menu_object('Primary Menu');
 
-if (!$primary_menu) {
-    $primary_menu_id = wp_create_nav_menu('Primary Menu');
+// if (!$primary_menu) {
+//     $primary_menu_id = wp_create_nav_menu('Primary Menu');
 
-    wp_update_nav_menu_item($primary_menu_id, 0, array(
-        'menu-item-title' =>  __('Homepage'),
-        'menu-item-url' => home_url( '/' ), 
-        'menu-item-status' => 'publish')
-	);
-}
+//     wp_update_nav_menu_item($primary_menu_id, 0, array(
+//         'menu-item-title' =>  __('Homepage'),
+//         'menu-item-url' => home_url( '/' ), 
+//         'menu-item-status' => 'publish')
+// 	);
+// }
 
-register_nav_menu('primary-menu', 'Primary Menu');
+// register_nav_menu('primary-menu', 'Primary Menu');
 
-// Check if the menu exists
-$blog_posts_menu = wp_get_nav_menu_object('Favorite Blog Posts');
+// // Check if the menu exists
+// $blog_posts_menu = wp_get_nav_menu_object('Favorite Blog Posts');
 
-if (!$blog_posts_menu) {
-    $blog_posts_menu_id = wp_create_nav_menu('Favorite Blog Posts');
-}
+// if (!$blog_posts_menu) {
+//     $blog_posts_menu_id = wp_create_nav_menu('Favorite Blog Posts');
+// }
 
-register_nav_menu('primary-menu', 'Primary Menu');
+// register_nav_menu('primary-menu', 'Primary Menu');
 
 register_nav_menu('social-menu', 'Social Menu');
+
+register_nav_menu('category-menu', 'Category Menu');
 
 // Turns on featured images
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
+}
+
+/**
+ * Remove the text - 'You may use these <abbr title="HyperText Markup
+ * Language">HTML</abbr> tags ...'
+ * from below the comment entry box.
+ */
+
+add_filter('comment_form_defaults', 'remove_comment_styling_prompt');
+
+function remove_comment_styling_prompt($defaults) {
+  $defaults['comment_notes_after'] = '';
+  return $defaults;
 }

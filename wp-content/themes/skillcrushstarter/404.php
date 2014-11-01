@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<div class="container wrap">
+	<div class="main-content">
 			<header class="page-header">
 				<h1 class="page-title">Not Found</h1>
 			</header>
@@ -19,7 +19,7 @@ get_header(); ?>
 				<?php get_search_form(); ?>
 			</div><!-- .page-content -->
 		</div><!-- #content -->
-	</div><!-- #primary -->
-<?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
+	</div><!-- container -->
 
 <?php get_footer(); ?>

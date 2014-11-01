@@ -1,10 +1,7 @@
 <article class="post-entry">
-  <div class="entry-wrap">
     <header class="entry-header">
       <div class="entry-meta">
-        <time class="entry-time">
-          <?php the_date(); ?>
-          </time>
+        <time class="entry-time"><?php the_date(); ?></time>
       </div>
     <h2 class="entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
   </header>
@@ -18,5 +15,4 @@
       <span class="entry-terms comments"><?php echo get_comments_number() ?> comments</span>       
     </div><!--entry-meta-->
   </footer>
-  </div><!--entry-wrap-->
 </article>

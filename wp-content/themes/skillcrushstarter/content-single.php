@@ -1,6 +1,6 @@
 <article class="individual-post" <?php post_class(); ?>>
   <header>
-    <h6><?php the_date(); ?></h6>
+    <time class="entry-time"><?php the_date(); ?></time>
     <h2 class="entry-title"><?php the_title(); ?></h2>
     <div class="post-entry img">
       <?php the_post_thumbnail(); ?>

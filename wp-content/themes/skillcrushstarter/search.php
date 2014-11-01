@@ -10,12 +10,12 @@
 get_header(); ?>
 
 <div class="container wrap">
-	<div class="main-content">
 		<?php if ( have_posts() ) : ?>
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for <span>%s</span>', 'skillcrushstarter' ), get_search_query() ); ?></h1>
+			<header class="top-head-title">
+				<?php printf( __( 'Search Results for <span>%s</span>', 'skillcrushstarter' ), get_search_query() ); ?>
 			</header><!-- .page-header -->
 
+	<div class="main-content">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post(); ?>
@@ -27,9 +27,7 @@ get_header(); ?>
 					<h4>No posts found!</h4>
 				</article>
 			<?php endif; ?>
-	</div><!-- #main-content -->
+	</div><!--#main-content-->
 <?php get_sidebar(); ?>
 </div><!-- container wrap -->
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>
