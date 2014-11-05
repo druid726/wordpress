@@ -14,17 +14,14 @@
  * @since Skillcrush Starter 1.0
  */
 
-get_header(); 
-?>
+get_header(); ?>
  <section class="blog-page">
   <div class="container wrap">
     <div class="main-content">
-      <?php get_template_part('content', 'post'); ?>        
+    <?php get_template_part('content', 'post');  ?>       
 		</div><!-- content -->
     <?php get_sidebar(); ?>
   </div><!-- container wrap -->
 </section><!-- blog-page-->
 
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>

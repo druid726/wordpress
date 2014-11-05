@@ -1,3 +1,10 @@
+<!-- THIS IS SINGLE.PHP -->
+<!-- /*
+
+This is what will be pulled in for a single blog post
+
+*/ -->
+
 <article class="individual-post" <?php post_class(); ?>>
   <header>
     <time class="entry-time"><?php the_date(); ?></time>
@@ -7,7 +14,7 @@
     </div><!--post-entry img-->
   </header>
   <div class="entry-summary">
-    <?php the_content() ?>
+    <?php the_content(); ?>
   </div><!--entry-summary-->
   <footer class="entry-footer">
     <div class="entry-meta">

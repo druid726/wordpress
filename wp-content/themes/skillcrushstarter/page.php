@@ -11,12 +11,11 @@
    * @since Skillcrush Starter 1.0
    */
 
-  get_header(); 
-?>
-<article>
+  get_header(); ?>
+<section class="blog-page">
   <div class="container wrap">
     <div class="main-content">
-      <h2 class="entry-title"><?php the_title(); ?></h2>
+      <!-- <h2 class="entry-title"><?php the_title(); ?></h2 -->
   		<?php
   			// Start the Loop.
   			while (have_posts()): the_post(); ?>
@@ -26,7 +25,5 @@
     </div><!--  main-content -->
       <?php get_sidebar(); ?>
   </div><!--container wrap-->
-</article>
-<?php 
-get_footer();
-?>
+</section>
+<?php get_footer(); ?>

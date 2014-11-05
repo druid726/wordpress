@@ -10,6 +10,12 @@
 get_header(); ?>
 	<div class="container wrap">
 		<div class="main-content">
+ <!-- THIS IS SINGLE.PHP -->
+ <!-- /*
+
+ This is what will be pulled in for a single blog post
+
+ */ -->
 			<?php
         // Start the Loop.
         while ( have_posts() ) : the_post();
@@ -22,5 +28,6 @@ get_header(); ?>
         endwhile;
       ?>
     </div><!-- main-content -->
-<?php get_sidebar(); ?>
+  <?php get_sidebar(); ?>
+</div><!--container -->
 <?php get_footer(); ?>

@@ -209,8 +209,7 @@ a:hover {
 	font-size: 17px;
 }
 .no-styles li {
-	list-style-type: none;
-	text-align: -webkit-match-parent;
+	list-style: none;
 }
 .menu a {
 	margin-left: 20px;
@@ -588,6 +587,22 @@ input::-webkit-input-placeholder {
 	text-transform: uppercase;
 	margin: 2em 0 1em;
 }
+.comment-reply-title {
+  color: #45ac9d;
+  font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 2em 0 1em;
+}
+.logged-in-as a {
+	text-decoration: none;
+	color: #3b3b3b;
+}
+.comment-form-author,
+.comment-form-email {
+  width: 50%;
+  float: left;
+  padding-bottom: 2%;
+}
 .default-form {
 	overflow: hidden;
 }
@@ -626,22 +641,34 @@ input::-webkit-input-placeholder {
 	float: right;
 	border: 0;
 }
+.default-form .form-submit #submit{
+	background: #45ac9d;
+	width: 206px;
+	height: 55px;
+	font: bold 1.05em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
+	color: #fff;
+	margin: 24px 0;
+	float: right;
+	border: 0;
+}
 .form-email {	
 	padding-left: 10px;
 }
-.comment-list {
+.commentlist {
 	margin-bottom: 50px;
 }
 .comment {
 	font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
 	border-bottom: 1px solid #BFBFBF;
 	padding-bottom: 23px;
+	list-style: none;
 }
 .comment-head {
 	margin: 25px 0 10px;
 }
 .comment-author {
 	font-weight: 600;
+	margin-top: 10px;
 }
 .comment-meta {
 	float: right;
@@ -835,11 +862,35 @@ section .navigation {
 	width: 85%;
 	font-weight: 100; 
 }
-.social-menu-sidebar li a[href*="facebook.com"]
-::before { 
-	content: '\f09a'; 
+.social-menu-sidebar ul {
+	float: left;
+	text-align: left;
+	list-style: none;
 }
-.social-menu-sidebar li a[href*="twitter.com"]
-::before { 
-	content: '\f099'; 
+.social-menu-sidebar ul li {
+	position: relative;
+	display: inline-block;
+}
+.social-menu-sidebar li a:before {
+	display: inline-block;
+	padding: 0 5px;
+	vertical-align: top;
+	font-family: 'Fontawesome';
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+	content: '/f0c0';
+}
+.social-menu-sidebar li a[href*="facebook.com"]::before { content: '\f09a'; }
+.social-menu-sidebar li a[href*="twitter.com"]::before { content: '\f099'; }
+
+#prev-post, #post-post{
+  padding-top: 1.5%;
+}
+
+#prev-post {
+  float: left;
+}
+
+#post-post {
+  float: right;
 }
