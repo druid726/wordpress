@@ -16,11 +16,11 @@ This is what will be pulled in for a single blog post
   <div class="entry-summary">
     <?php the_content(); ?>
   </div><!--entry-summary-->
-  <footer class="entry-footer">
+  <div class="entry-footer">
     <div class="entry-meta">
       <span class="entry-terms author">Written by <a><?php the_author(); ?></a></span>
       <span class="entry-terms category">Posted in <a><?php the_category(' and '); ?></a></span>
       <span class="entry-terms comments"><?php echo get_comments_number() ?> comments</span>     
     </div><!--entry-meta-->
-  </footer>
+  </div><!--entry-footer-->
 </article>

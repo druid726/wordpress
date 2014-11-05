@@ -12,12 +12,14 @@
 
 <?php if( !is_front_page() ) { ?>
 
-	<footer class="navigation container">
-		<?php get_sidebar( 'footer' ); ?>
-    <div class="left">
-      <a href="<?php echo site_url('/') ?>">&larr;&nbsp;&nbsp;Back to posts</a>
-    </div><!--left-->
-	</footer><!-- navigation container -->
+
+<footer class="navigation container">
+<?php get_sidebar( 'footer' ); ?>
+  <div class="left">
+  <?php next_posts_link(); ?>
+  <?php previous_posts_link(); ?>
+  </div><!--left-->
+</footer>
   
 <?php } ?>
 

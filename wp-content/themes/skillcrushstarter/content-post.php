@@ -22,10 +22,4 @@ This is a template file for the post content
             the_post();
             get_template_part('content', get_post_format());
           endwhile; ?>
-            <div class="navigation">
-              <div class="left">
-              <p><?php next_posts_link(); ?></p>
-              <p><?php previous_posts_link(); ?></p>
-              </div>
-            </div>
-        <?php endif; ?>    
+        <?php endif; ?>  

@@ -42,8 +42,6 @@ get_header(); ?>
 				<?php endif; ?>
 		</div><!-- #main-content -->
 		<?php get_sidebar(); ?>
+<?php get_footer(); ?>
 	</div><!-- container wrap -->	
 <!-- </section> -->
-<?php
-
-get_footer();

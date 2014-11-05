@@ -25,5 +25,5 @@
     </div><!--  main-content -->
       <?php get_sidebar(); ?>
   </div><!--container wrap-->
-</section>
 <?php get_footer(); ?>
+</section>

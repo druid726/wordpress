@@ -99,11 +99,11 @@ body {
 	background: #fff;
 	border-top: 6px solid #45ac9d;
 	color: #3b3b3b;
-	font: 17px/1.65 'OpenSans', Arial, sans-serif;
+	font: 1.25em/1.7 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.01em;
 }
 .container {
-	width: 960px;
+	width: 1100px;
 	margin: 0 auto;
 }
 a:hover {
@@ -127,6 +127,7 @@ a:hover {
 	border-bottom: 0;
 }
 .content p {
+	font-size: 1.1em;
 	margin: 0.7em 0;
 }
 
@@ -283,6 +284,7 @@ h6 {
 	background: #fff;
 }
 .author-intro .btn {
+	font-size: 1.2em;
 	margin-top: 75px;
 }
 
@@ -294,7 +296,7 @@ h6 {
 }
 .entry-title {
 	margin: 0.25em 0;
-	font: bold 1.47em/1.4 'Montserrat', sans-serif;
+	font: bold 1.65em/1.6 'Montserrat', sans-serif;
 	letter-spacing: -0.034em;
 }
 .entry-title a {
@@ -310,7 +312,7 @@ h6 {
 	font-size: 0.82em;
 }
 .entry-summary {
-	font-size: 1em;
+	font-size: 1.1em;
 }
 .entry-summary .wp-caption {
 	margin: 25px 0;
@@ -409,6 +411,10 @@ h6 {
 .widget h2 {
 	font-size: 1em;
 	margin-left: 20px;
+}
+.widget p {
+	margin-left: 20px;
+	font-weight: 300;	
 }
 .widget ul {
 	margin-bottom: 40px;
@@ -520,7 +526,7 @@ input::-webkit-input-placeholder {
 }
 #navigation a {
 	background: #fff;
-	color: #000;
+	color: #150300;
 	clear: both;
 	font: bold 0.8em/4.08 'OpenSans', Arial, sans-serif;
 	margin: 20px 0;
@@ -565,7 +571,7 @@ input::-webkit-input-placeholder {
 	clear: both;
 	overflow: hidden;
 }
-.comments-area .comments-title {
+.comments-area .coments-title {
 	border: solid #bfbfbf;
 	border-width: 1px 0;
 	color: #150300;
@@ -849,7 +855,7 @@ textarea.warning,
 	padding-bottom: 200px;
 }
 body > footer.container {
-	/*top: -350px;*/
+	top: -350px;
 	position: relative;
 }
 section .navigation {
@@ -882,15 +888,3 @@ section .navigation {
 }
 .social-menu-sidebar li a[href*="facebook.com"]::before { content: '\f09a'; }
 .social-menu-sidebar li a[href*="twitter.com"]::before { content: '\f099'; }
-
-#prev-post, #post-post{
-  padding-top: 1.5%;
-}
-
-#prev-post {
-  float: left;
-}
-
-#post-post {
-  float: right;
-}
